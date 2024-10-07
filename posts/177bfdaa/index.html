@@ -2,9 +2,9 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 7.3.0">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.3.0">
+
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
@@ -13,14 +13,13 @@
 <link rel="stylesheet" href="/css/main.css">
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"howu911.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
-  </script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha256-5eIC48iZUHmSlSUz9XtjRyK2mzQkHScZY1WdMaoz74E=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-  <meta name="description" content="docker学习笔记">
+<script class="next-config" data-name="main" type="application/json">{"hostname":"howu911.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.21.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":true,"style":"mac"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="docker学习笔记">
 <meta property="og:type" content="article">
 <meta property="og:title" content="docker学习笔记">
 <meta property="og:url" content="https://howu911.github.io/posts/177bfdaa/index.html">
@@ -61,20 +60,15 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/howu911/picx-images-hosting/master/docker_stu202410051638767.png">
 
+
 <link rel="canonical" href="https://howu911.github.io/posts/177bfdaa/">
 
 
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : false,
-    isPost : true,
-    lang   : 'zh-CN'
-  };
-</script>
 
-  <title>docker学习笔记 | Howu's Blog</title>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://howu911.github.io/posts/177bfdaa/","path":"posts/177bfdaa/","title":"docker学习笔记"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>docker学习笔记 | Howu's Blog</title>
   
 
 
@@ -82,56 +76,38 @@
 
 
 
+
+
   <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
 
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
     </div>
   </div>
 
   <div class="site-meta">
 
     <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">Howu's Blog</h1>
-      <span class="logo-line-after"><i></i></span>
+      <i class="logo-line"></i>
+      <p class="site-title">Howu's Blog</p>
+      <i class="logo-line"></i>
     </a>
   </div>
 
   <div class="site-nav-right">
-    <div class="toggle popup-trigger">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
         <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
@@ -139,29 +115,8 @@
 
 
 
-
 <nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
-
-  </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
-
-  </li>
-        <li class="menu-item menu-item-categories">
-
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
-
-  </li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -173,87 +128,140 @@
 
   <div class="search-pop-overlay">
     <div class="popup search-popup">
-        <div class="search-header">
-  <span class="search-icon">
-    <i class="fa fa-search"></i>
-  </span>
-  <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off"
-           placeholder="搜索..." spellcheck="false"
-           type="search" class="search-input">
-  </div>
-  <span class="popup-btn-close">
-    <i class="fa fa-times-circle"></i>
-  </span>
-</div>
-<div id="search-result">
-  <div id="no-result">
-    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
-  </div>
-</div>
-
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="搜索..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
     </div>
   </div>
 
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Docker%E6%A6%82%E5%BF%B5"><span class="nav-number">1.</span> <span class="nav-text">Docker概念</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#docker%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%BB%84%E6%88%90"><span class="nav-number">1.1.</span> <span class="nav-text">docker的基本组成</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Docker%E5%91%BD%E4%BB%A4"><span class="nav-number">2.</span> <span class="nav-text">Docker命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%95%9C%E5%83%8F%E5%91%BD%E4%BB%A4"><span class="nav-number">2.1.</span> <span class="nav-text">镜像命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%B9%E5%99%A8%E5%91%BD%E4%BB%A4"><span class="nav-number">2.2.</span> <span class="nav-text">容器命令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B0%E5%BB%BA%E5%AE%B9%E5%99%A8%E5%B9%B6%E5%90%AF%E5%8A%A8"><span class="nav-number">2.2.1.</span> <span class="nav-text">新建容器并启动</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%B8%E7%94%A8%E5%85%B6%E5%AE%83%E5%91%BD%E4%BB%A4"><span class="nav-number">2.2.2.</span> <span class="nav-text">常用其它命令</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%90%8E%E5%8F%B0%E5%90%AF%E5%8A%A8%E5%AE%B9%E5%99%A8"><span class="nav-number">2.2.2.1.</span> <span class="nav-text">后台启动容器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E6%97%A5%E5%BF%97"><span class="nav-number">2.2.2.2.</span> <span class="nav-text">查看日志</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E5%AE%B9%E5%99%A8%E4%B8%AD%E7%9A%84%E8%BF%9B%E7%A8%8B%E4%BF%A1%E6%81%AF"><span class="nav-number">2.2.2.3.</span> <span class="nav-text">查看容器中的进程信息</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E5%AE%B9%E5%99%A8%E5%B1%9E%E6%80%A7"><span class="nav-number">2.2.2.4.</span> <span class="nav-text">查看容器属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%9B%E5%85%A5%E5%BD%93%E5%89%8D%E6%AD%A3%E5%9C%A8%E8%BF%90%E8%A1%8C%E7%9A%84%E5%AE%B9%E5%99%A8"><span class="nav-number">2.2.2.5.</span> <span class="nav-text">进入当前正在运行的容器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%B9%E5%99%A8%E6%8B%B7%E8%B4%9D%E6%96%87%E4%BB%B6"><span class="nav-number">2.2.2.6.</span> <span class="nav-text">容器拷贝文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E7%AB%AF%E5%8F%A3%E6%98%A0%E5%B0%84"><span class="nav-number">2.2.2.7.</span> <span class="nav-text">查看端口映射</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AE%B9%E5%99%A8%E6%94%AF%E6%92%91%E6%8A%80%E6%9C%AF-namespace"><span class="nav-number">3.</span> <span class="nav-text">容器支撑技术-namespace</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%B9%E5%99%A8%E4%B8%8E%E8%BF%9B%E7%A8%8B%E9%97%B4%E5%85%B3%E7%B3%BB"><span class="nav-number">3.1.</span> <span class="nav-text">容器与进程间关系</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E8%BF%9B%E7%A8%8Bnamespace%E7%9A%84%E6%96%B9%E5%BC%8F"><span class="nav-number">3.2.</span> <span class="nav-text">查看进程namespace的方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#UTS-namespace"><span class="nav-number">3.3.</span> <span class="nav-text">UTS namespace</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A4%BA%E4%BE%8B"><span class="nav-number">3.3.1.</span> <span class="nav-text">示例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%86%85%E6%A0%B8%E4%B8%AD%E7%9A%84%E5%AE%9E%E7%8E%B0"><span class="nav-number">3.3.2.</span> <span class="nav-text">内核中的实现</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#IPC-Namespace"><span class="nav-number">3.4.</span> <span class="nav-text">IPC Namespace</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A4%BA%E4%BE%8B-1"><span class="nav-number">3.4.1.</span> <span class="nav-text">示例</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PID-Namespace"><span class="nav-number">3.5.</span> <span class="nav-text">PID Namespace</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Mount-Namespace"><span class="nav-number">3.6.</span> <span class="nav-text">Mount Namespace</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#User-Namespace"><span class="nav-number">3.7.</span> <span class="nav-text">User Namespace</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9B%E5%BB%BAuser-namespace"><span class="nav-number">3.7.1.</span> <span class="nav-text">创建user namespace</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%98%A0%E5%B0%84user-ID%E5%92%8Cgroup-ID"><span class="nav-number">3.7.2.</span> <span class="nav-text">映射user ID和group ID</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Network-Namespace"><span class="nav-number">3.8.</span> <span class="nav-text">Network Namespace</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A4%BA%E4%BE%8B-2"><span class="nav-number">3.8.1.</span> <span class="nav-text">示例</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AE%B9%E5%99%A8%E6%94%AF%E6%92%91%E6%8A%80%E6%9C%AF-cgroup"><span class="nav-number">4.</span> <span class="nav-text">容器支撑技术-cgroup</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#cgroup%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="nav-number">4.1.</span> <span class="nav-text">cgroup的作用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#cgroup%E7%BB%84%E6%88%90"><span class="nav-number">4.2.</span> <span class="nav-text">cgroup组成</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#cgroup%E8%A7%84%E5%88%99"><span class="nav-number">4.3.</span> <span class="nav-text">cgroup规则</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#cgroup%E5%AD%90%E7%B3%BB%E7%BB%9F"><span class="nav-number">4.4.</span> <span class="nav-text">cgroup子系统</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A4%BA%E4%BE%8B-3"><span class="nav-number">4.5.</span> <span class="nav-text">示例</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E5%AD%90cgroup"><span class="nav-number">4.5.1.</span> <span class="nav-text">创建子cgroup</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E8%BF%9B%E7%A8%8B"><span class="nav-number">4.5.2.</span> <span class="nav-text">添加进程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E9%99%90%E9%A2%9D"><span class="nav-number">4.5.3.</span> <span class="nav-text">设置限额</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="nav-number">4.6.</span> <span class="nav-text">参考资料</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#docker%E6%94%AF%E6%92%91%E6%8A%80%E6%9C%AF-Union-FS"><span class="nav-number">5.</span> <span class="nav-text">docker支撑技术-Union FS</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Docker%E9%95%9C%E5%83%8F"><span class="nav-number">6.</span> <span class="nav-text">Docker镜像</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%95%9C%E5%83%8F%E6%98%AF%E4%BB%80%E4%B9%88"><span class="nav-number">6.1.</span> <span class="nav-text">镜像是什么</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Docker%E9%95%9C%E5%83%8F%E5%8A%A0%E8%BD%BD%E5%8E%9F%E7%90%86"><span class="nav-number">6.2.</span> <span class="nav-text">Docker镜像加载原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%95%9C%E5%83%8F%E5%88%86%E5%B1%82"><span class="nav-number">6.3.</span> <span class="nav-text">镜像分层</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#commit%E9%95%9C%E5%83%8F"><span class="nav-number">6.4.</span> <span class="nav-text">commit镜像</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#docker%E9%95%9C%E5%83%8F%E7%AE%A1%E7%90%86"><span class="nav-number">7.</span> <span class="nav-text">docker镜像管理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%95%9C%E5%83%8F%E6%9C%AC%E5%9C%B0%E7%AE%A1%E7%90%86"><span class="nav-number">7.1.</span> <span class="nav-text">镜像本地管理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#repositories-json"><span class="nav-number">7.1.1.</span> <span class="nav-text">repositories.json</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#docker%E5%AE%B9%E5%99%A8%E4%B8%8E%E9%95%9C%E5%83%8F"><span class="nav-number">7.2.</span> <span class="nav-text">docker容器与镜像</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Docker%E5%AE%B9%E5%99%A8%E5%8D%B7"><span class="nav-number">8.</span> <span class="nav-text">Docker容器卷</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%AE%B9%E5%99%A8%E5%8D%B7"><span class="nav-number">8.1.</span> <span class="nav-text">什么是容器卷</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E5%AE%B9%E5%99%A8%E5%8D%B7"><span class="nav-number">8.2.</span> <span class="nav-text">使用容器卷</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9D%E8%AF%86Dockerfile"><span class="nav-number">8.3.</span> <span class="nav-text">初识Dockerfile</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%B9%E5%99%A8%E9%97%B4%E6%95%B0%E6%8D%AE%E5%8D%B7"><span class="nav-number">8.4.</span> <span class="nav-text">容器间数据卷</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#DockerFile"><span class="nav-number">9.</span> <span class="nav-text">DockerFile</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#DockerFile%E4%BB%8B%E7%BB%8D"><span class="nav-number">9.1.</span> <span class="nav-text">DockerFile介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DockerFile%E8%AF%AD%E6%B3%95"><span class="nav-number">9.2.</span> <span class="nav-text">DockerFile语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BC%96%E5%86%99DockerFile"><span class="nav-number">9.3.</span> <span class="nav-text">编写DockerFile</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B0%8F%E7%BB%93"><span class="nav-number">9.4.</span> <span class="nav-text">小结</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Docker%E7%BD%91%E7%BB%9C"><span class="nav-number">10.</span> <span class="nav-text">Docker网络</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AB%AF%E5%8F%A3%E6%98%A0%E5%B0%84"><span class="nav-number">10.1.</span> <span class="nav-text">端口映射</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%B9%E5%99%A8%E4%BA%92%E8%81%94-%E2%80%93link"><span class="nav-number">10.2.</span> <span class="nav-text">容器互联 –link</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BD%91%E7%BB%9C"><span class="nav-number">10.3.</span> <span class="nav-text">自定义网络</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E5%AE%B9%E5%99%A8%E5%88%B0%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BD%91%E8%B7%AF"><span class="nav-number">10.4.</span> <span class="nav-text">添加容器到自定义网路</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Docker-%E8%BF%90%E8%A1%8C%E5%AE%B9%E5%99%A8%E6%A6%82%E8%BF%B0"><span class="nav-number">11.</span> <span class="nav-text">Docker 运行容器概述</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#docker%E8%BF%9B%E7%A8%8B%E5%85%B3%E7%B3%BB%E5%9B%BE"><span class="nav-number">11.1.</span> <span class="nav-text">docker进程关系图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#docker-creat"><span class="nav-number">11.2.</span> <span class="nav-text">docker creat</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BA%E5%AE%B9%E5%99%A8%E8%AE%BE%E7%BD%AE%E8%AF%BB%E5%86%99%E5%B1%82"><span class="nav-number">11.2.1.</span> <span class="nav-text">为容器设置读写层</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E5%AE%B9%E5%99%A8%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="nav-number">11.2.2.</span> <span class="nav-text">创建容器配置文件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#docker-start"><span class="nav-number">11.3.</span> <span class="nav-text">docker start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%86%E5%A4%87rootfs"><span class="nav-number">11.3.1.</span> <span class="nav-text">准备rootfs</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9D%E5%A7%8B%E5%8C%96%E7%BD%91%E7%BB%9C"><span class="nav-number">11.3.2.</span> <span class="nav-text">初始化网络</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%9F%E6%88%90bundle%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="nav-number">11.3.3.</span> <span class="nav-text">生成bundle配置文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%B9%E5%99%A8%E7%9B%91%E6%8E%A7"><span class="nav-number">11.3.4.</span> <span class="nav-text">容器监控</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#shim"><span class="nav-number">11.3.5.</span> <span class="nav-text">shim</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#runc"><span class="nav-number">11.3.6.</span> <span class="nav-text">runc</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E5%AE%B9%E5%99%A8"><span class="nav-number">11.3.6.1.</span> <span class="nav-text">创建容器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%90%AF%E5%8A%A8%E5%AE%B9%E5%99%A8"><span class="nav-number">11.3.6.2.</span> <span class="nav-text">启动容器</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#other"><span class="nav-number">12.</span> <span class="nav-text">other</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#container-shim%E8%BF%9B%E7%A8%8B%E5%8F%82%E6%95%B0"><span class="nav-number">12.1.</span> <span class="nav-text">container-shim进程参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#io%E6%96%87%E4%BB%B6"><span class="nav-number">12.2.</span> <span class="nav-text">io文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%90%E8%A1%8C%E7%8A%B6%E6%80%81%E6%96%87%E4%BB%B6"><span class="nav-number">12.3.</span> <span class="nav-text">运行状态文件</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99-1"><span class="nav-number">13.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">howu</p>
+  <div class="site-description" itemprop="description"></div>
 </div>
-    </header>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
 
     
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
+  </aside>
 
 
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
+    </div>
 
-          <div class="content post posts-expand">
-            
+    <div class="main-inner post posts-expand">
 
-    
+
+  
+
+
+<div class="post-block">
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://howu911.github.io/posts/177bfdaa/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="howu">
-      <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Howu's Blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="docker学习笔记 | Howu's Blog">
+      <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           docker学习笔记
         </h1>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
 
-              <time title="创建时间：2024-10-05 16:20:26 / 修改时间：18:43:38" itemprop="dateCreated datePublished" datetime="2024-10-05T16:20:26+08:00">2024-10-05</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Docker/" itemprop="url" rel="index"><span itemprop="name">Docker</span></a>
-                </span>
-            </span>
+      <time title="创建时间：2024-10-05 16:20:26 / 修改时间：18:43:38" itemprop="dateCreated datePublished" datetime="2024-10-05T16:20:26+08:00">2024-10-05</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Docker/" itemprop="url" rel="index"><span itemprop="name">Docker</span></a>
+        </span>
+    </span>
 
-          
+  
+</div>
 
         </div>
       </header>
@@ -261,10 +269,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
-
-      
-        <p>docker学习笔记</p>
+    <div class="post-body" itemprop="articleBody"><p>docker学习笔记</p>
 <span id="more"></span>
 
 <h1 id="Docker概念"><a href="#Docker概念" class="headerlink" title="Docker概念"></a>Docker概念</h1><h2 id="docker的基本组成"><a href="#docker的基本组成" class="headerlink" title="docker的基本组成"></a>docker的基本组成</h2><p><img src="https://raw.githubusercontent.com/howu911/picx-images-hosting/master/docker_stu202410051638767.png" alt="请添加图片描述"></p>
@@ -786,184 +791,69 @@
     
     
 
-      <footer class="post-footer">
+    <footer class="post-footer">
           <div class="post-tags">
               <a href="/tags/Docker/" rel="tag"># Docker</a>
           </div>
 
         
 
-
-        
-      </footer>
-    
+    </footer>
   </article>
+</div>
+
+
+
+
+
+
+    
   
-  
-  
-
-
-
-          </div>
-          
-<script src="https://utteranc.es/client.js"
-        repo="howu911/blog-comments"
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
-
-        </div>
-          
-  
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
+  <div class="comments giscus-container">
   </div>
-
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          文章目录
-        </li>
-        <li class="sidebar-nav-overview">
-          站点概览
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Docker%E6%A6%82%E5%BF%B5"><span class="nav-number">1.</span> <span class="nav-text">Docker概念</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#docker%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%BB%84%E6%88%90"><span class="nav-number">1.1.</span> <span class="nav-text">docker的基本组成</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Docker%E5%91%BD%E4%BB%A4"><span class="nav-number">2.</span> <span class="nav-text">Docker命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%95%9C%E5%83%8F%E5%91%BD%E4%BB%A4"><span class="nav-number">2.1.</span> <span class="nav-text">镜像命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%B9%E5%99%A8%E5%91%BD%E4%BB%A4"><span class="nav-number">2.2.</span> <span class="nav-text">容器命令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B0%E5%BB%BA%E5%AE%B9%E5%99%A8%E5%B9%B6%E5%90%AF%E5%8A%A8"><span class="nav-number">2.2.1.</span> <span class="nav-text">新建容器并启动</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%B8%E7%94%A8%E5%85%B6%E5%AE%83%E5%91%BD%E4%BB%A4"><span class="nav-number">2.2.2.</span> <span class="nav-text">常用其它命令</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%90%8E%E5%8F%B0%E5%90%AF%E5%8A%A8%E5%AE%B9%E5%99%A8"><span class="nav-number">2.2.2.1.</span> <span class="nav-text">后台启动容器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E6%97%A5%E5%BF%97"><span class="nav-number">2.2.2.2.</span> <span class="nav-text">查看日志</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E5%AE%B9%E5%99%A8%E4%B8%AD%E7%9A%84%E8%BF%9B%E7%A8%8B%E4%BF%A1%E6%81%AF"><span class="nav-number">2.2.2.3.</span> <span class="nav-text">查看容器中的进程信息</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E5%AE%B9%E5%99%A8%E5%B1%9E%E6%80%A7"><span class="nav-number">2.2.2.4.</span> <span class="nav-text">查看容器属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%9B%E5%85%A5%E5%BD%93%E5%89%8D%E6%AD%A3%E5%9C%A8%E8%BF%90%E8%A1%8C%E7%9A%84%E5%AE%B9%E5%99%A8"><span class="nav-number">2.2.2.5.</span> <span class="nav-text">进入当前正在运行的容器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%B9%E5%99%A8%E6%8B%B7%E8%B4%9D%E6%96%87%E4%BB%B6"><span class="nav-number">2.2.2.6.</span> <span class="nav-text">容器拷贝文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E7%AB%AF%E5%8F%A3%E6%98%A0%E5%B0%84"><span class="nav-number">2.2.2.7.</span> <span class="nav-text">查看端口映射</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AE%B9%E5%99%A8%E6%94%AF%E6%92%91%E6%8A%80%E6%9C%AF-namespace"><span class="nav-number">3.</span> <span class="nav-text">容器支撑技术-namespace</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%B9%E5%99%A8%E4%B8%8E%E8%BF%9B%E7%A8%8B%E9%97%B4%E5%85%B3%E7%B3%BB"><span class="nav-number">3.1.</span> <span class="nav-text">容器与进程间关系</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E8%BF%9B%E7%A8%8Bnamespace%E7%9A%84%E6%96%B9%E5%BC%8F"><span class="nav-number">3.2.</span> <span class="nav-text">查看进程namespace的方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#UTS-namespace"><span class="nav-number">3.3.</span> <span class="nav-text">UTS namespace</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A4%BA%E4%BE%8B"><span class="nav-number">3.3.1.</span> <span class="nav-text">示例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%86%85%E6%A0%B8%E4%B8%AD%E7%9A%84%E5%AE%9E%E7%8E%B0"><span class="nav-number">3.3.2.</span> <span class="nav-text">内核中的实现</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#IPC-Namespace"><span class="nav-number">3.4.</span> <span class="nav-text">IPC Namespace</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A4%BA%E4%BE%8B-1"><span class="nav-number">3.4.1.</span> <span class="nav-text">示例</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PID-Namespace"><span class="nav-number">3.5.</span> <span class="nav-text">PID Namespace</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Mount-Namespace"><span class="nav-number">3.6.</span> <span class="nav-text">Mount Namespace</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#User-Namespace"><span class="nav-number">3.7.</span> <span class="nav-text">User Namespace</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9B%E5%BB%BAuser-namespace"><span class="nav-number">3.7.1.</span> <span class="nav-text">创建user namespace</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%98%A0%E5%B0%84user-ID%E5%92%8Cgroup-ID"><span class="nav-number">3.7.2.</span> <span class="nav-text">映射user ID和group ID</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Network-Namespace"><span class="nav-number">3.8.</span> <span class="nav-text">Network Namespace</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A4%BA%E4%BE%8B-2"><span class="nav-number">3.8.1.</span> <span class="nav-text">示例</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AE%B9%E5%99%A8%E6%94%AF%E6%92%91%E6%8A%80%E6%9C%AF-cgroup"><span class="nav-number">4.</span> <span class="nav-text">容器支撑技术-cgroup</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#cgroup%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="nav-number">4.1.</span> <span class="nav-text">cgroup的作用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#cgroup%E7%BB%84%E6%88%90"><span class="nav-number">4.2.</span> <span class="nav-text">cgroup组成</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#cgroup%E8%A7%84%E5%88%99"><span class="nav-number">4.3.</span> <span class="nav-text">cgroup规则</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#cgroup%E5%AD%90%E7%B3%BB%E7%BB%9F"><span class="nav-number">4.4.</span> <span class="nav-text">cgroup子系统</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A4%BA%E4%BE%8B-3"><span class="nav-number">4.5.</span> <span class="nav-text">示例</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E5%AD%90cgroup"><span class="nav-number">4.5.1.</span> <span class="nav-text">创建子cgroup</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E8%BF%9B%E7%A8%8B"><span class="nav-number">4.5.2.</span> <span class="nav-text">添加进程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E9%99%90%E9%A2%9D"><span class="nav-number">4.5.3.</span> <span class="nav-text">设置限额</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="nav-number">4.6.</span> <span class="nav-text">参考资料</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#docker%E6%94%AF%E6%92%91%E6%8A%80%E6%9C%AF-Union-FS"><span class="nav-number">5.</span> <span class="nav-text">docker支撑技术-Union FS</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Docker%E9%95%9C%E5%83%8F"><span class="nav-number">6.</span> <span class="nav-text">Docker镜像</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%95%9C%E5%83%8F%E6%98%AF%E4%BB%80%E4%B9%88"><span class="nav-number">6.1.</span> <span class="nav-text">镜像是什么</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Docker%E9%95%9C%E5%83%8F%E5%8A%A0%E8%BD%BD%E5%8E%9F%E7%90%86"><span class="nav-number">6.2.</span> <span class="nav-text">Docker镜像加载原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%95%9C%E5%83%8F%E5%88%86%E5%B1%82"><span class="nav-number">6.3.</span> <span class="nav-text">镜像分层</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#commit%E9%95%9C%E5%83%8F"><span class="nav-number">6.4.</span> <span class="nav-text">commit镜像</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#docker%E9%95%9C%E5%83%8F%E7%AE%A1%E7%90%86"><span class="nav-number">7.</span> <span class="nav-text">docker镜像管理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%95%9C%E5%83%8F%E6%9C%AC%E5%9C%B0%E7%AE%A1%E7%90%86"><span class="nav-number">7.1.</span> <span class="nav-text">镜像本地管理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#repositories-json"><span class="nav-number">7.1.1.</span> <span class="nav-text">repositories.json</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#docker%E5%AE%B9%E5%99%A8%E4%B8%8E%E9%95%9C%E5%83%8F"><span class="nav-number">7.2.</span> <span class="nav-text">docker容器与镜像</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Docker%E5%AE%B9%E5%99%A8%E5%8D%B7"><span class="nav-number">8.</span> <span class="nav-text">Docker容器卷</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%AE%B9%E5%99%A8%E5%8D%B7"><span class="nav-number">8.1.</span> <span class="nav-text">什么是容器卷</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E5%AE%B9%E5%99%A8%E5%8D%B7"><span class="nav-number">8.2.</span> <span class="nav-text">使用容器卷</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9D%E8%AF%86Dockerfile"><span class="nav-number">8.3.</span> <span class="nav-text">初识Dockerfile</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%B9%E5%99%A8%E9%97%B4%E6%95%B0%E6%8D%AE%E5%8D%B7"><span class="nav-number">8.4.</span> <span class="nav-text">容器间数据卷</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#DockerFile"><span class="nav-number">9.</span> <span class="nav-text">DockerFile</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#DockerFile%E4%BB%8B%E7%BB%8D"><span class="nav-number">9.1.</span> <span class="nav-text">DockerFile介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DockerFile%E8%AF%AD%E6%B3%95"><span class="nav-number">9.2.</span> <span class="nav-text">DockerFile语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BC%96%E5%86%99DockerFile"><span class="nav-number">9.3.</span> <span class="nav-text">编写DockerFile</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B0%8F%E7%BB%93"><span class="nav-number">9.4.</span> <span class="nav-text">小结</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Docker%E7%BD%91%E7%BB%9C"><span class="nav-number">10.</span> <span class="nav-text">Docker网络</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AB%AF%E5%8F%A3%E6%98%A0%E5%B0%84"><span class="nav-number">10.1.</span> <span class="nav-text">端口映射</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%B9%E5%99%A8%E4%BA%92%E8%81%94-%E2%80%93link"><span class="nav-number">10.2.</span> <span class="nav-text">容器互联 –link</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BD%91%E7%BB%9C"><span class="nav-number">10.3.</span> <span class="nav-text">自定义网络</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E5%AE%B9%E5%99%A8%E5%88%B0%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BD%91%E8%B7%AF"><span class="nav-number">10.4.</span> <span class="nav-text">添加容器到自定义网路</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Docker-%E8%BF%90%E8%A1%8C%E5%AE%B9%E5%99%A8%E6%A6%82%E8%BF%B0"><span class="nav-number">11.</span> <span class="nav-text">Docker 运行容器概述</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#docker%E8%BF%9B%E7%A8%8B%E5%85%B3%E7%B3%BB%E5%9B%BE"><span class="nav-number">11.1.</span> <span class="nav-text">docker进程关系图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#docker-creat"><span class="nav-number">11.2.</span> <span class="nav-text">docker creat</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BA%E5%AE%B9%E5%99%A8%E8%AE%BE%E7%BD%AE%E8%AF%BB%E5%86%99%E5%B1%82"><span class="nav-number">11.2.1.</span> <span class="nav-text">为容器设置读写层</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E5%AE%B9%E5%99%A8%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="nav-number">11.2.2.</span> <span class="nav-text">创建容器配置文件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#docker-start"><span class="nav-number">11.3.</span> <span class="nav-text">docker start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%86%E5%A4%87rootfs"><span class="nav-number">11.3.1.</span> <span class="nav-text">准备rootfs</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9D%E5%A7%8B%E5%8C%96%E7%BD%91%E7%BB%9C"><span class="nav-number">11.3.2.</span> <span class="nav-text">初始化网络</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%9F%E6%88%90bundle%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="nav-number">11.3.3.</span> <span class="nav-text">生成bundle配置文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%B9%E5%99%A8%E7%9B%91%E6%8E%A7"><span class="nav-number">11.3.4.</span> <span class="nav-text">容器监控</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#shim"><span class="nav-number">11.3.5.</span> <span class="nav-text">shim</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#runc"><span class="nav-number">11.3.6.</span> <span class="nav-text">runc</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E5%AE%B9%E5%99%A8"><span class="nav-number">11.3.6.1.</span> <span class="nav-text">创建容器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%90%AF%E5%8A%A8%E5%AE%B9%E5%99%A8"><span class="nav-number">11.3.6.2.</span> <span class="nav-text">启动容器</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#other"><span class="nav-number">12.</span> <span class="nav-text">other</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#container-shim%E8%BF%9B%E7%A8%8B%E5%8F%82%E6%95%B0"><span class="nav-number">12.1.</span> <span class="nav-text">container-shim进程参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#io%E6%96%87%E4%BB%B6"><span class="nav-number">12.2.</span> <span class="nav-text">io文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%90%E8%A1%8C%E7%8A%B6%E6%80%81%E6%96%87%E4%BB%B6"><span class="nav-number">12.3.</span> <span class="nav-text">运行状态文件</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99-1"><span class="nav-number">13.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">howu</p>
-  <div class="site-description" itemprop="description"></div>
+  
+  
 </div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">1</span>
-          <span class="site-state-item-name">日志</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-            <a href="/categories/">
-          
-        <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">分类</span></a>
-      </div>
-      <div class="site-state-item site-state-tags">
-            <a href="/tags/">
-          
-        <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">标签</span></a>
-      </div>
-  </nav>
-</div>
+  </main>
 
+  <footer class="footer">
+    <div class="footer-inner">
 
-<!-- recent posts -->
-      </div>
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">howu</span>
+  </div>
 
     </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
+  </footer>
 
-
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-        
-
-<div class="copyright">
   
-  &copy; 
-  <span itemprop="copyrightYear">2024</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">howu</span>
-</div>
-
-        
-
-
-
-
-
-
-
-
-      </div>
-    </footer>
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
   </div>
 
-  
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/pisces.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
-
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
 
 
   
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
 
-
-
-
-  
-<script src="/js/local-search.js"></script>
-
-
-
-
-
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
 
 
 
@@ -973,7 +863,37 @@
 
   
 
-  
+
+
+
+<script class="next-config" data-name="giscus" type="application/json">{"enable":true,"repo":"howu911/blog-comments","repo_id":"R_kgDOM75Hug","category":"Announcements","category_id":"DIC_kwDOM75Hus4CjHIc","mapping":"pathname","strict":0,"reactions_enabled":1,"emit_metadata":1,"theme":"light","lang":"en","crossorigin":"anonymous","input_position":"bottom","loading":"lazy"}</script>
+
+<script>
+document.addEventListener('page:loaded', () => {
+  if (!CONFIG.page.comments) return;
+
+  NexT.utils.loadComments('.giscus-container')
+    .then(() => NexT.utils.getScript('https://giscus.app/client.js', {
+      attributes: {
+        async                   : true,
+        crossOrigin             : 'anonymous',
+        'data-repo'             : CONFIG.giscus.repo,
+        'data-repo-id'          : CONFIG.giscus.repo_id,
+        'data-category'         : CONFIG.giscus.category,
+        'data-category-id'      : CONFIG.giscus.category_id,
+        'data-mapping'          : CONFIG.giscus.mapping,
+        'data-strict'           : CONFIG.giscus.strict,
+        'data-reactions-enabled': CONFIG.giscus.reactions_enabled,
+        'data-emit-metadata'    : CONFIG.giscus.emit_metadata,
+        'data-theme'            : CONFIG.giscus.theme,
+        'data-lang'             : CONFIG.giscus.lang,
+        'data-input-position'   : CONFIG.giscus.input_position,
+        'data-loading'          : CONFIG.giscus.loading
+      },
+      parentNode: document.querySelector('.giscus-container')
+    }));
+});
+</script>
 
 </body>
 </html>
